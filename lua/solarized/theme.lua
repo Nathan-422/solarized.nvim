@@ -60,7 +60,7 @@ theme.loadSyntax = function ()
 
 	-- Italic strings
 	if vim.g.solarized_italic_comments == true then
-		syntax.String =                 {fg = solarized.green, bg = solarized.none, style= 'italic' }, -- Any string
+		syntax.String =                 {fg = solarized.green, bg = solarized.none, style= 'italic' } -- Any string
 	else
 		syntax.String =                 {fg = solarized.green,} -- normal string
 	end
