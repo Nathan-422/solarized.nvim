@@ -81,6 +81,7 @@ require('lualine').setup {
 | Option                              | Default     | Description                                                                                                                                                     |
 | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | solarized_italic_comments            | `false`     | Make comments italic                                                                                                                                            |
+| solarized_italic_strings             | `false`     | Make strings italic                                                                                                                                            |
 | solarized_italic_keywords            | `false`     | Make keywords italic                                                                                                                                            |
 | solarized_italic_functions           | `false`     | Make functions italic                                                                                                                                           |
 | solarized_italic_variables           | `false`     | Make variables and identifiers italic                                                                                                                           |
@@ -91,6 +92,7 @@ require('lualine').setup {
 ```lua
 -- Example config in lua
 vim.g.solarized_italic_comments = true
+vim.g.solarized_italic_string = true
 vim.g.solarized_italic_keywords = true
 vim.g.solarized_italic_functions = true
 vim.g.solarized_italic_variables = false

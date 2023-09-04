@@ -10,7 +10,6 @@ theme.loadSyntax = function ()
 		StorageClass =				{ fg = solarized.cyan }, -- static, register, volatile, etc.
 		Structure =					{ fg = solarized.yellow }, -- struct, union, enum, etc.
 		Constant =					{ fg = solarized.purple }, -- any constant
-		String =					{ fg = solarized.green, bg = solarized.none, style= 'italic' }, -- Any string
 		Character =					{ fg = solarized.orange }, -- any character constant: 'c', '\n'
 		Number =					{ fg = solarized.orange }, -- a number constant: 5
 		Boolean =					{ fg = solarized.orange }, -- a boolean constant: TRUE, false
@@ -57,6 +56,13 @@ theme.loadSyntax = function ()
 		syntax.Comment =		{fg = solarized.comments, bg = solarized.none, style = 'italic'} -- italic comments
 	else
 		syntax.Comment =		{fg = solarized.comments} -- normal comments
+	end
+
+	-- Italic strings
+	if vim.g.solarized_italic_comments == true then
+		syntax.String =                 {fg = solarized.green, bg = solarized.none, style= 'italic' }, -- Any string
+	else
+		syntax.String =                 {fg = solarized.green,} -- normal string
 	end
 
 	-- Italic Keywords
