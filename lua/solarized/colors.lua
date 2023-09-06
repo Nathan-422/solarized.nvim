@@ -40,9 +40,9 @@ local solarized = {
 	border =        '#002b36',
 	line_numbers =  '#839496',
 	highlight =     '#d8ccc4',
-	disabled =      '#073642',
+	disabled =      '#586e75',
 	cursor =        '#268bd2',
-	accent =        '#073642',
+	accent =        '#586e75',
 
 	error =         '#dc322f',
 	link =          '#2aa198',
